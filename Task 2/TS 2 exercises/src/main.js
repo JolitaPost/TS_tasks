@@ -33,4 +33,3 @@ console.group('2 - https://edabit.com/challenge/9KEKJG5PZTFmG3Zau');
     console.log(solutionArgs3, result3);
 }
 console.groupEnd();
-//# sourceMappingURL=main.js.map

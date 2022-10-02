@@ -7,35 +7,35 @@ type Person = {
   name: string,
   surname: string,
   age: number,
-  height?: number, // Neprivaloma savybė
-  weight?: number, // Neprivaloma savybė
+  height?: number, // Neprivaloma sabybė
+  weight?: number, // Neprivaloma sabybė
 };
 
 // Minimaliai aprašytas Person tipo objektas
 const person1: Person = {
-  id: '39304075689',
-  name: 'Verundijus',
-  surname: 'Bauda',
-  age: 51,
+  id: '7859621547',
+  name: 'Virgilijus',
+  surname: 'Zadeikis',
+  age: 74,
 };
 
 // Pilnai aprašytas Person tipo objektas
 const person2: Person = {
-  id: '39304075689',
-  name: 'Ryja',
-  surname: 'Žaneirytė',
-  age: 41,
+  id: '4569236523',
+  name: 'Nojus',
+  surname: 'Liutaitis',
+  age: 19,
   height: 1.65,
   weight: 55,
 };
 
 const person3: Person = {
-  id: '39304075689',
-  name: 'Brudas',
-  surname: 'Veilokas',
-  age: 11,
-  height: 1.45,
-  weight: 45,
+  id: '589451238',
+  name: 'Janina',
+  surname: 'Sestokiene',
+  age: 61,
+  height: 1.75,
+  weight: 55,
 }
 
 // Tipo panaudojimas aprašant funkcijas

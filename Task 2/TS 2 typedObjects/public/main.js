@@ -1,25 +1,30 @@
 "use strict";
+/*
+  Objektų tipai aprašomi aprašant kiekvieną savybę atskirai. Jeigu savybė nėra privaloma, prie savybės pavadinimo rašome klaustuką
+*/
+// Minimaliai aprašytas Person tipo objektas
 const person1 = {
-    id: '39304075689',
-    name: 'Verundijus',
-    surname: 'Bauda',
-    age: 51,
+    id: '7859621547',
+    name: 'Virgilijus',
+    surname: 'Zadeikis',
+    age: 74,
 };
+// Pilnai aprašytas Person tipo objektas
 const person2 = {
-    id: '39304075689',
-    name: 'Ryja',
-    surname: 'Žaneirytė',
-    age: 41,
+    id: '4569236523',
+    name: 'Nojus',
+    surname: 'Liutaitis',
+    age: 19,
     height: 1.65,
     weight: 55,
 };
 const person3 = {
-    id: '39304075689',
-    name: 'Brudas',
-    surname: 'Veilokas',
-    age: 11,
-    height: 1.45,
-    weight: 45,
+    id: '589451238',
+    name: 'Janina',
+    surname: 'Sestokiene',
+    age: 61,
+    height: 1.75,
+    weight: 55,
 };
 const createFullname = ({ name, surname }) => `${name} ${surname}`;
 const printCouple = (p1, p2) => {
@@ -28,6 +33,7 @@ const printCouple = (p1, p2) => {
     console.log(`${p1Fullname} + ${p2Fullname} = ❤`);
 };
 printCouple(person1, person2);
+// Atlikite užduotis, funkcijas aprašydami tipais
 console.group('1. Sukurkite funkciją kuri patikrina ar žmogus yra pilnametis');
 {
     const isAdult = (p) => p.age >= 18;
@@ -58,4 +64,3 @@ console.group('3. Sukurkite funkciją, kuri grąžina žmogaus incialus');
     });
 }
 console.groupEnd();
-//# sourceMappingURL=main.js.map

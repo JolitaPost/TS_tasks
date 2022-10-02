@@ -4,7 +4,7 @@
     * Array<tipas> -> Array<number>, Array<string>, Array<Person> ir t.t.
 */
 
-type Person = {
+type Person1 = {
   id: string,
   name: string,
   surname: string,
@@ -13,31 +13,31 @@ type Person = {
   weight?: number, // Neprivaloma savybė
 };
 
-const numData: number[] = [1, 2, 3, 4, 5, 6];
-const names: Array<string> = ['Jagnita', 'Kimparas', 'Pitonkas', 'Fasalija'];
-const people: Person[] = [{
-  id: '39304075689',
-  name: 'Verundijus',
-  surname: 'Bauda',
-  age: 51,
+const numData: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
+const names: Array<string> = ['Rita', 'Jonas', 'Petras', 'Viktorija'];
+const people: Person1[] = [{
+  id: '4578562318',
+  name: 'Viktoras',
+  surname: 'Ramonas',
+  age: 63,
 }, {
-  id: '39304075689',
-  name: 'Ryja',
-  surname: 'Žaneirytė',
-  age: 41,
-  height: 1.65,
-  weight: 55,
+  id: '8594672134',
+  name: 'Rita',
+  surname: 'Aukstyte',
+  age: 44,
+  height: 1.62,
+  weight: 65,
 }, {
-  id: '39304075689',
-  name: 'Brudas',
-  surname: 'Veilokas',
-  age: 11,
-  height: 1.45,
-  weight: 45,
+  id: '3958792312',
+  name: 'Bronius',
+  surname: 'Barda',
+  age: 101,
+  height: 1.79,
+  weight: 92,
 }];
 
 // Kaip ir kiti tipai, masyvai gali būti naudojami funkcijų parametrams arba funkcijų grąžinimo tipams aprašyti
-type CreatePeopleArrayFunction = (p1: Person, p2: Person) => Person[];
+type CreatePeopleArrayFunction = (p1: Person1, p2: Person1) => Person1[];
 
 const printStrings = (strings: string[]): void => {
   const printString = (str: string): void => console.log(str);
@@ -73,7 +73,7 @@ console.group('Panaudojimo pavyzdžiai:');
 
   console.group('createPeopleArray');
   {
-    const couple: Array<Person> = createPeopleArray(people[0], people[1]);
+    const couple: Array<Person1> = createPeopleArray(people[0], people[1]);
     console.log(couple);
   }
   console.groupEnd();
@@ -84,7 +84,7 @@ console.group('Užduotys');
 {
   console.group('1. Aprašykite funkcijoms ir kintamiesiems tipus');
   {
-    const numbers: number[] = [1, -8, -6, 7, 5, 1];
+    const numbers: number[] = [1, 3, -4, 5, 7, -8];
 
     function addPositiveNumbers(arr: number[]) {
       const positiveNumberReducer = (sum: number, num: number) => (num > 0 ? sum + num : sum);
